@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>CSS Positions</title>
+  </head>
+  <body>
+    <h1 id="titulo-principal">CSS Positions</h1>
+
+    <!--STATIC-->
+    <div id="static" class="positions">
+      <h2 class="sub-titulos">STATIC</h2>
+      <p>A div <b>Static</b> é a posição padrão de todos os elementos HTML. Ela não tem uma formatação especifica e sempre vai alinhar elementos de acordo de como foram criados e inseridos na página, geralmente um embaixo do outro.</p>
+      <p>
+        Veja abaixo 1 exemplo da posição <b><u>Static</u></b>
+      </p>
+      <div class="blocos">Static</div>
+    </div>
+
+    <!--RELATIVE-->
+    <div id="relative" class="positions">
+      <h2 class="sub-titulos">RELATIVE</h2>
+      <p>A posição <b>Relative</b> permite que você desloque um elemento da forma que desejar a partir da posição base que ele se encontra.</p>
+      <p>
+        Veja abaixo alguns exemplos da posição <b><u>Relative</u></b>
+      </p>
+      <div id="grid-blc-relative">
+        <div class="blc-relative">
+          <h3>Top 30px</h3>
+          <div id="blc-top" class="blocos">Relative</div>
+        </div>
+        <div class="blc-relative">
+          <h3>Left 50px</h3>
+          <div id="blc-left" class="blocos">Relative</div>
+        </div>
+        <div class="blc-relative">
+          <h3>Right 50px</h3>
+          <div id="blc-right" class="blocos">Relative</div>
+        </div>
+        <div class="blc-relative">
+          <h3>Bottom 30px</h3>
+          <div id="blc-bottom" class="blocos">Relative</div>
+        </div>
+      </div>
+    </div>
+
+    <!--ABSOLUTE-->
+    <div id="absolute" class="positions">
+      <h2 class="sub-titulos">ABSOLUTE</h2>
+      <p>A posição <b>Absolute</b> permite que você desloque um elemento da forma que desejar.</p>
+      <p>O elemento que estiver recebendo a posição Absolute deverá ser posicionado dentro de um elemento 'Pai' que esteja utilizando da posição Relative, caso contrário, o elemento ficará posicionado na página principal.</p>
+      <p>
+        Veja abaixo alguns exemplos da posição <b><u>Absolute</u></b>
+      </p>
+      <div id="blc-top-left" class="blocos">Top: 200px e Left: 150px</div>
+    </div>
+
+    <!--FIXED-->
+    <div id="fixed" class="positions">
+      <h2 class="sub-titulos">FIXED</h2>
+      <p>A posição <b>Fixed</b> permite que você deixe fixado um elemento.</p>
+      <p>O elemento que estiver fixado vai se mover junto so 'scroll' do mouse, ou seja, sempre estará presente na tela.</p>
+      <p>
+        Veja o elemento <b><u>Fixed</u></b> 'grudado' na página
+      </p>
+      <div class="blc-fixed">
+        <div id="blc-fixed" class="blocos">Fixed</div>
+      </div>
+    </div>
+
+    <!--STICKY-->
+    <div id="sticky" class="positions">
+      <h2 class="sub-titulos">STICKY</h2>
+      <p>A posição <b>sticky</b> permite que você deixe um elemento fixado em uma determinada posição, e este elemento vai seguir o 'scroll' do mouse até que ele retorne a posição criada para ele.</p>
+      <p>O elemento Sticky permanece na sua posição original, segue o scroll do mouse e apenas para de seguir o scroll quando chegar ao ultimo elemento da página.</p>
+      <p>Por conta de se mover de acordo com o scroll, o elemento Sticky sobrepoe os outros elementos contidos na página.</p>
+      <p>
+        Veja o elemento <b><u>sticky</u></b> 'grudado' na página
+      </p>
+      <div id="blc-sticky" class="blocos">Sticky</div>
+    </div>
+  </body>
+</html>
